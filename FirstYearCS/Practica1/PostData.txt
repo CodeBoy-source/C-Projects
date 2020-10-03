@@ -1,0 +1,7 @@
+El make file he tenido que ejecutarlo distinto al script, utilizando la siguiente linea:
+
+make -f MAKEFILE all
+
+ó 
+
+make -f MAKEFILE mrproper

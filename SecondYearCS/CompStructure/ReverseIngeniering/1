@@ -1,0 +1,30 @@
+file bomba
+layout asm
+layout reg
+br main 
+run < <(echo -e hacking\\n1234\\n)
+b *main+115
+continue
+p(char[0xd])password
+ni
+ni
+set $eax=0 
+ni
+br *main+173
+continue
+set $eax=0 
+br *main + 256
+continue
+p(int )passcode
+ni
+set $eax=1234 
+br *main+298
+set $eax=0
+continue 
+file bomba
+set write on
+set {char[13]}0x601068="MrRobotHii.\n"
+set {int }0x601060=1234
+p (char[0xd])password
+p (int )passcode
+quit
